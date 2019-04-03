@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#99808080"
+    android:visibility="gone"
+    android:clickable="true"
+    android:focusable="true"
+   android:focusableInTouchMode="true"
+    android:id="@+id/layout_contextmenu">
+
+    <ImageView
+        android:id="@+id/bt_touch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@drawable/circle_touch"
+        />
+
+    <ImageView
+        android:id="@+id/bt_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:focusable="true"
+        android:scaleType="center"
+        android:background="@drawable/circle_menubutton"
+        android:src="@drawable/ic_contextmenu_download"
+ />
+
+    <ImageView
+        android:id="@+id/bt_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:focusable="true"
+        android:background="@drawable/circle_menubutton"
+        android:src="@drawable/ic_contextmenu_favorite"/>
+    <ImageView
+        android:id="@+id/bt_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:focusable="true"
+        android:background="@drawable/circle_menubutton"
+        android:src="@drawable/ic_contextmenu_email"
+ />
+</RelativeLayout>

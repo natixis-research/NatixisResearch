@@ -1,0 +1,9 @@
+def webservices = [:]
+    webservices.WS_BASE_URL = '""'
+    webservices.BO_BASE_URL = '""'
+    webservices.WS_IMAGE_BASE_URL = '""'
+    webservices.MENTIONS_URL = '""'
+    webservices.RESET_PWD_URL = '""'
+    webservices.BASIC_AUTH = '""'
+
+ext.webservices = webservices

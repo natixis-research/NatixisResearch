@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+apply from: "/../webservices.gradle"
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.natixis.natixisresearch.app"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 4
+        versionName "4.0.3"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        buildTypes.each {
+            it.buildConfigField 'String', 'WS_BASE_URL', webservices.WS_BASE_URL
+            it.buildConfigField 'String', 'BO_BASE_URL', webservices.BO_BASE_URL
+            it.buildConfigField 'String', 'WS_IMAGE_BASE_URL', webservices.WS_IMAGE_BASE_URL
+            it.buildConfigField 'String', 'MENTIONS_URL', webservices.MENTIONS_URL
+            it.buildConfigField 'String', 'RESET_PWD_URL', webservices.RESET_PWD_URL
+            it.buildConfigField 'String', 'BASIC_AUTH', webservices.BASIC_AUTH
+        }
+    }
+
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/maven/commons-io/commons-io/pom.xml'
+        exclude 'META-INF/maven/commons-io/commons-io/pom.properties'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    /*  compile(group: 'com.octo.android.robospice', name: 'robospice-google-http-client', version: '1.4.6') {
+
+                }*/
+    compile('com.octo.android.robospice:robospice-google-http-client:1.4.13') {
+        exclude(group: 'com.google.android', module: 'support-v4')
+    }
+    compile('com.google.http-client:google-http-client-android:1.18.0-rc') {
+        exclude(group: 'com.google.android', module: 'android')
+    }
+    compile('com.google.api-client:google-api-client-android:1.18.0-rc') {
+        exclude(group: 'com.google.android', module: 'android')
+    }
+    compile('com.google.http-client:google-http-client-jackson2:1.18.0-rc') {
+        exclude(group: 'xpp3', module: 'xpp3')
+        exclude(group: 'com.google.android', module: 'android')
+        exclude(group: 'org.apache.httpcomponents')
+    }
+
+    compile project(':muPDFViewer')
+
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.2.+'
+    compile 'com.fasterxml.jackson.core:jackson-core:2.2.+'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.2.+'
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile "com.google.android.gms:play-services-gcm:8.3.0"
+}

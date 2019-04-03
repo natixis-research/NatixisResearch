@@ -1,0 +1,57 @@
+[
+  {
+    "Id": "7224",
+    "Name": "Commodities",
+    "Universes":[
+    {
+        "Id": "7221",
+        "Name": "Econ tests"
+      },
+       {
+          "Id": "7223",
+          "Name": "TESTS deep",
+                                         "Universes":[
+                                            {
+                                                "Id": "7221",
+                                                "Name": "deeper test"
+                                              },
+                                               {
+                                                  "Id": "7223",
+                                                  "Name": "another test"
+                                                }
+                                            ]
+        }
+    ]
+  },
+  {
+    "Id": "7221",
+    "Name": "Economic"
+  },
+  {
+    "Id": "7225",
+    "Name": "Investment Strategies"
+  },
+  {
+    "Id": "7220",
+    "Name": "ISR"
+  },
+  {
+    "Id": "7222",
+    "Name": "Patrick Artus"
+  },
+  {
+    "Id": "7223",
+    "Name": "Rates & FX"
+    ,
+               "Universes":[
+                  {
+                      "Id": "7221",
+                      "Name": "deeper Rates"
+                    },
+                     {
+                        "Id": "7223",
+                        "Name": "another Rates"
+                      }
+                  ]
+  }
+]

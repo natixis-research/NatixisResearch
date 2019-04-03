@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/header_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/line_color"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/line_theme" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_carousel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line_color" />
+
+        <TextView
+            android:id="@+id/big_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_carousel"
+            android:layout_marginTop="0dp"
+            android:background="@color/bg_title"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="Toutes les publications"
+            android:textColor="#FFF"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progress_carousel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/layout_header"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_header_separator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_header"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/line_color_ergo"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#535352" />
+
+        <ImageView
+            android:id="@+id/iv_ergo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ergo" />
+    </LinearLayout>
+</RelativeLayout>
+

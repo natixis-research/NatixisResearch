@@ -1,0 +1,11 @@
+.gradle
+/local.properties
+/.idea/workspace.xml
+.DS_Store
+build
+libraries
+/NatixisResearch/*.log
+/NatixisResearch/*.apk
+/.idea
+/*.iml
+/NatixisResearch/*.iml

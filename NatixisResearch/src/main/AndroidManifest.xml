@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.natixis.natixisresearch.app"
+    android:versionCode="2"
+    android:versionName="1.0.2">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <permission android:name="com.natixis.natixisresearch.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.natixis.natixisresearch.permission.C2D_MESSAGE" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name=".NatixisResearchApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:logo="@drawable/ic_logo"
+        android:theme="@style/NatixisTheme">
+        <activity
+            android:name=".activity.SplashscreenActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            >
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--  <service
+              android:name="com.octo.android.robospice.Jackson2GoogleHttpClientSpiceService"
+              android:exported="false" />-->
+
+
+        <activity
+            android:name=".activity.HomeActivity"
+            android:configChanges="orientation|keyboardHidden|locale"
+            android:label=""></activity>
+        <activity android:name=".activity.ConnectionActivity"></activity>
+        <activity android:name=".activity.CGVActivity"></activity>
+        <activity android:name=".activity.BrowserActivity"></activity>
+        <activity android:name=".activity.ParameterActivity"
+
+            android:configChanges="locale"></activity>
+        <activity android:name=".activity.VideoPlayerActivity"></activity>
+
+
+        <activity
+            android:name=".activity.DownloadDocumentActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <!--  <activity android:name=".activity.SplashscreenActivity" 2 ></activity>-->
+        <activity
+            android:name=".activity.NatixisPdfReader"
+            android:theme="@style/NatixisThemePdf"></activity>
+
+        <service android:name=".network.generic.NatixisJackson2GoogleHttpClientSpiceService">
+
+        </service>
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.example.gcm" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="push.GcmMessageListenerService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".push.GcmInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".push.GcmRegistrationIntentService"
+            android:exported="false" />
+
+
+
+    </application>
+
+</manifest>

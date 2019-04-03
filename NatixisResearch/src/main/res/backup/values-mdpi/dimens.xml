@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="document_min_height">90dp</dimen>
+    <dimen name="document_title_textsize">18sp</dimen>
+    <dimen name="document_category_textsize">16sp</dimen>
+    <dimen name="document_time_textsize">16sp</dimen>
+    <dimen name="drawer_home_textsize">17sp</dimen>
+    <dimen name="drawer_home_padding">10dp</dimen>
+    <dimen name="drawer_actions_padding">12dp</dimen>
+    <dimen name="drawer_mainitems_textsize">17sp</dimen>
+    <dimen name="drawer_childitems_textsize">17sp</dimen>
+    <dimen name="drawer_username_textsize">17sp</dimen>
+    <dimen name="drawer_email_textsize">14sp</dimen>
+    <dimen name="drawer_btparameter_padding">15dp</dimen>
+</resources>

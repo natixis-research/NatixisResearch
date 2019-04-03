@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/iv_carousel"
+    android:scaleType="centerCrop"
+    android:clickable="true"
+    android:src="@drawable/carousel_0"
+
+    />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title_document"
+        android:text="Title test lorem ipsum dolore"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:background="@drawable/bg_gradient_text"
+        android:layout_alignParentTop="true"
+        android:padding="4dp"
+        android:textSize="14sp"
+        android:textColor="@color/light_gray"
+        android:ellipsize="end"/>
+</RelativeLayout>

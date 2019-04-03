@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:id="@+id/line_color"
+        android:layout_alignParentTop="true"
+        android:background="@color/line_theme" />
+
+    <ImageView
+        android:id="@+id/iv_carousel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_below="@id/line_color"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/carousel_0" />
+
+    <TextView
+        android:id="@+id/big_title"
+        android:layout_width="wrap_content"
+
+        android:text="Toutes les publications"
+        android:textAllCaps="true"
+        android:background="#535352"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+        android:padding="6dp"
+        android:layout_marginTop="-10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/iv_carousel"
+        android:fontFamily="sans-serif-light"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" />
+<!--
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ib_filters"
+        android:src="@drawable/ic_download"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/iv_carousel" />
+-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/big_title">
+
+        <ExpandableListView
+            android:layout_width="match_parent"
+            android:id="@+id/lv_documents"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="#ccc"
+            android:dividerHeight="1dp"></ExpandableListView>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/progress_documents" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+
+    android:background="#55000000"
+>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_contact"
+        android:text="test"
+
+        android:textColor="@color/drawer_text"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="@dimen/drawer_mainitems_textsize"
+        android:id="@+id/tv_nom_categorie"
+        android:drawableRight="@drawable/arrow_top"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
+</LinearLayout>

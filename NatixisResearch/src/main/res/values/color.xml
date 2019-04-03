@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="natixis_purple">#5B2473</color>
+    <color name="natixis_blue">#00B2CC</color>
+    <color name="natixis_red">#F93345</color>
+    <color name="natixis_gray">#535352</color>
+
+
+    <color name="bg_title">@color/natixis_gray</color>
+    <color name="button_purple">@color/natixis_purple</color>
+
+
+    <color name="line_theme">@color/natixis_blue</color>
+
+    <color name="white">#FFF</color>
+
+
+    <color name="button_purple_text">@color/white</color>
+
+    <color name="dark_gray">#323232</color>
+
+    <color name="light_gray">#cdcdcb</color>
+    <color name="bubble_gray">#cdcdcb</color>
+
+    <color name="button_gray">#838383</color>
+    <color name="button_gray_text">@color/white</color>
+
+    <color name="drawer_text">@color/white</color>
+    <color name="drawer_action">@color/natixis_blue</color>
+    <color name="toolbar">#C0535353</color>
+
+    <color name="document_title_color">#9A9A9A</color>
+
+    <color name="circle_blue_text">@color/natixis_blue</color>
+    <color name="circle_gray_text">@color/document_title_color</color>
+    <color name="circle_purple_text">@color/white</color>
+</resources>

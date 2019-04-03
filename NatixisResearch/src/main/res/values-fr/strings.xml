@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Research</string>
+
+    <string name="action_settings">Options</string>
+    <string name="action_language">Changer de langue</string>
+    <string name="action_search">Rechercher</string>
+    <!-- Auth -->
+
+    <string name="login_error_title">Identification impossible</string>
+    <string name="login_error_message">Veuillez vérifier votre identifiant et mot de passe. Si l\'erreur persiste, veuillez contacter le support de Natixis pour assistance.</string>
+    <string name="accept">J\'accepte</string>
+    <string name="refuse">Je refuse</string>
+
+
+    <string name="are_you_sure_exit">Êtes-vous sûr(e) de vouloir quitter ?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="menu">Menu</string>
+    <string name="navigation_drawer_open">Ouvrir le menu</string>
+    <string name="navigation_drawer_close">Fermer le menu</string>
+    <string name="email_">E-mail</string>
+    <string name="password_">Mot de passe</string>
+    <string name="all_publications">Toutes les publications</string>
+    <string name="downloads">Mes téléchargements</string>
+    <string name="favorites">Mes Favoris</string>
+    <string name="aucun_documents">Aucune publication</string>
+    <string name="connection_informations">Vous n\'êtes pas identifié. Si vous recevez déjà les documents de la recherche Natixis par email, passez en mode authentifié. Vous aurez alors accès à vos abonements habituels. Cette étape d\'identification n\'est nécessaire que lors de la première connexion</string>
+    <string name="connexion">Se connecter</string>
+    <string name="share">share</string>
+    <string name="unable_to_prepare_file">Impossible de préparer le fichier pour l\'envoi (Vérifiez qu\'il soit correctement téléchargé)...</string>
+    <string name="aucun_univers">Vous n\'avez pas encore enregistré d\'accès rapide vers vos expertises.</string>
+    <string name="not_authentified">Login</string>
+    <string name="no_connection">Aucune connexion internet.</string>
+    <string name="extend_search">Étendre à toutes les expertises</string>
+    <string name="are_you_sure_you_want_to_delete_this_file">Êtes-vous sûr(e) de vouloir supprimer ce document du cache ? \r\nVous ne pourrez plus y accéder en mode hors ligne, toutefois, il vous sera toujours possible de le re télécharger.</string>
+    <string name="file_deletion">Suppression du document</string>
+    <string name="logout">Se déconnecter</string>
+    <string name="are_you_sure_logout">Etes-vous sûr de vouloir vous déconnecter ?</string>
+    <string name="login">Identifiant</string>
+    <string name="log_in">Login</string>
+    <string name="day">j</string>
+    <string name="my_account">Mon compte</string>
+    <string name="name">Nom</string>
+    <string name="email">E-mail</string>
+    <string name="application_support">Problème technique ?</string>
+    <string name="contact_support">Contacter le support Natixis</string>
+    <string name="stockage_management">Stockage</string>
+    <string name="empty_downloads">Vider mes téléchargements</string>
+    <string name="contact_support_desc">Vous pouvez contacter le support de Natixis pour toute question relative au fonctionnement de l\'application.\r\nCliquez sur le bouton ci-dessus et envoyez votre mail joint.</string>
+    <string name="loading">Chargement en cours</string>
+    <string name="remove_from_favorites">Retirer des favoris</string>
+    <string name="add_to_favorites">Ajouter aux favoris </string>
+    <string name="remove_from_downloads">Supprimer des Downloads</string>
+    <string name="download_document">Télécharger la publication</string>
+    <string name="share_doc_by_mail">Partager par email</string>
+    <string name="open_document">Ouvrir la publication</string>
+    <string name="what_you_want_to_do_with_doc">Que souhaitez-vous faire ?</string>
+    <string name="doc_added_to_favorites">Publication ajoutée à vos favoris</string>
+    <string name="doc_removed_from_favorites">Publication supprimée des favoris</string>
+    <string name="doc_removed_from_cache">Publication supprimée de vos téléchargements</string>
+    <string name="download_in_progress">Téléchargement de la publication en cours</string>
+    <string name="done">Retour</string>
+    <string name="document_downloaded">Publication téléchargée</string>
+    <string name="legal_information">Mentions légales</string>
+    <string name="you_are_connected">Vous êtes connecté(e)</string>
+    <string name="you_are_disconnected">Vous êtes déconnecté(e)</string>
+    <string name="cgv_content">Cette application est mise en ligne par la Banque de Grande Clientèle de Natixis et s\’adresse exclusivement, au sens de la directive MIF, à des « clients professionnels », à des distributeurs ou à des CGPI. Les personnes ne répondant pas à la qualité de « clients professionnels », « distributeurs » ou de « CGPI » ne peuvent pas utiliser cette application.\n\nLes informations contenues dans cette application proviennent de la Banque de Grande Clientèle de Natixis. Elles ne visent pas à être distribuées ou utilisées dans un pays ou une juridiction où cette distribution ou utilisation serait contraire aux dispositions légales ou réglementaires, ou qui imposerait à la Banque de Grande Clientèle de Natixis et ses filiales/partenaires à se conformer aux obligations d\’enregistrement de ces pays ou juridictions.</string>
+    <string name="cgv_title">Conditions d\'utilisation</string>
+    <string name="cgv_refused">L\'application va maintenant se fermer car vous avez refusé les conditions d\'utilisation.\nVous pourrez les accepter lors de la prochaine ouverture de l\'application.</string>
+    <string name="your_are_not_logged_in">Vous n\'êtes pas identifié</string>
+    <string name="connect">Me connecter</string>
+    <string name="space">Utilisé</string>
+    <string name="no_mail_application">Aucun application permettant d\'envoyer des emails n\'a été trouvée.</string>
+    <string name="title_clear_storage">Suppression</string>
+    <string name="question_clear_storage">Êtes-vous sûr de vouloir supprimer toutes les publications de vos Downloads ?</string>
+    <string name="search_result_for">Résultats pour </string>
+    <string name="forgot_password">Mot de passe oublié ? </string>
+    <string name="you_have_no_downloads">Vous n\'avez pas de téléchargement</string>
+    <string name="description_downloads">Utilisez l’icône pour télécharger une publication. Vous pourrez ainsi la lire hors réseau.</string>
+    <string name="you_have_no_favorites">Vous n\'avez pas de favoris</string>
+    <string name="description_add_favorites">Mettez en favoris vos documents préférés afin de bénéficier de la fonctionnalité de consultation hors réseau.</string>
+    <string name="if_client_login">Vous êtes client ?\nVeuillez vous identifier.</string>
+    <string name="consultation_help">Faites le choix de consulter directement toutes les publications ou de sélectionner celle qui vous interesse dans la liste déroulante.</string>
+    <string name="selection_help">Pour un accès rapide, regroupez ici les expertises que vous consultez régulièrement. (L\'étoile permet de rajouter  une expertise dans votre sélection)</string>
+    <string name="videos">Vidéos</string>
+    <string name="select_universe">Sélectionner...</string>
+    <string name="ma_selection">Ma sélection</string>
+    <string name="bonjour">Bonjour</string>
+    <string name="consulter">Consulter</string>
+    <string name="nouveau_client">Nouveau Client ?</string>
+    <string name="technical_issue">Problème technique</string>
+    <string name="commercial_request">Demande commerciale</string>
+</resources>

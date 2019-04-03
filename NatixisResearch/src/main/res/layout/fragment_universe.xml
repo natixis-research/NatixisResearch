@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_userinfos_selector"
+
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/iv_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:layout_marginRight="5dp"
+            android:src="@drawable/guillemets" />
+
+        <LinearLayout
+            android:id="@+id/layout_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_user"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_hello"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/bonjour"
+                android:textColor="@color/drawer_text"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_nom_prenom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/drawer_text"
+                android:textSize="@dimen/drawer_username_textsize"
+                android:textStyle="italic" />
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line_separator0"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/relative_user_layout"
+        android:background="#CECECE" />
+
+    <TextView
+        android:id="@+id/tvConsult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_separator0"
+        android:clickable="true"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/point_interrogation"
+        android:padding="6dp"
+        android:text="@string/consulter"
+        android:layout_marginTop="6dp"
+        android:onClick="onClickConsultHelp"
+        android:textColor="@color/drawer_text"
+        android:textSize="15sp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:id="@+id/layout_selectuniverse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvConsult"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/natixis_purple"
+            android:drawableLeft="@drawable/allpub"
+            android:drawablePadding="8dp"
+            android:gravity="left|center_vertical"
+            android:padding="5dp"
+            android:textAllCaps="false"
+            android:text="@string/all_publications"
+            android:textColor="#FFF"
+            android:textSize="@dimen/drawer_home_textsize" />
+
+        <Spinner
+            android:id="@+id/universe_spinner"
+            android:layout_width="fill_parent"
+
+            android:background="#fff"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_selectuniverse"
+        android:clickable="true"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/point_interrogation"
+        android:padding="6dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/ma_selection"
+        android:onClick="onClickSelectionHelp"
+        android:textColor="@color/drawer_text"
+        android:textSize="15sp"
+        android:textStyle="bold|italic" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvSelection">
+
+
+        <ExpandableListView
+            android:id="@+id/list_universes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="10dp"
+            android:childDivider="@drawable/child_separator_transparent"
+            android:choiceMode="singleChoice"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:groupIndicator="@null"
+            tools:context=".NavigationDrawerFragment"
+            tools:listitem="@layout/item_research_category" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_universes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_layout_empty"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvSelection">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/emptyView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/aucun_univers"
+                android:textColor="@color/light_gray"
+                android:textSize="14sp" />
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

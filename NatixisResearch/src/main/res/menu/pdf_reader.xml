@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/action_print"
+        android:title="Imprimmer"
+        android:orderInCategory="100"
+        android:icon="@drawable/reader_print"
+        android:showAsAction="always" />
+    <item android:id="@+id/action_mail"
+        android:title="Partager"
+        android:orderInCategory="100"
+        android:icon="@drawable/reader_mail"
+        android:showAsAction="always" />
+    <item android:id="@+id/action_favorites"
+        android:title="Favoris"
+        android:orderInCategory="100"
+
+        android:icon="@drawable/reader_favorite_off"
+        android:showAsAction="always" />
+
+
+</menu>

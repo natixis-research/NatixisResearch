@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigation_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_drawer_selector"
+    android:fitsSystemWindows="true"
+    android:focusable="false"
+    android:descendantFocusability="afterDescendants"
+    android:clickable="true"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/liste_actions_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/drawer_action"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+
+        android:focusable="false"
+        android:padding="2dp"
+        android:weightSum="3">
+
+        <ImageButton
+            android:id="@+id/bt_videos"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="@dimen/drawer_actions_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bt_videos_selector"
+            android:visibility="visible" />
+        <ImageButton
+            android:id="@+id/bt_publications"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="@dimen/drawer_actions_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/bt_publications_selector"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+
+            android:layout_gravity="center"
+
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/bt_downloads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/bt_downloads_selector" />
+
+            <TextView
+                android:id="@+id/tvBadgeDownloads"
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/circle_badge"
+                android:gravity="center"
+                android:text="62"
+                android:padding="0dp"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+
+
+
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/bt_contact"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+
+            android:padding="@dimen/drawer_actions_padding"
+            android:scaleType="centerInside"
+            android:src="@drawable/bt_sendmail_selector" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/liste_actions_drawer"
+        android:layout_weight="1"></FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/bt_parameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_parameter" />
+
+
+</RelativeLayout>

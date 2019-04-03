@@ -1,0 +1,305 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    tools:context=".activity.ConnectionFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/layout_user_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/lbl_mon_compte"
+                    style="@style/NatixisTheme.TextTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/my_account"
+                    android:textAllCaps="true" />
+
+                <View
+                    android:id="@+id/line_separator0"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/lbl_mon_compte"
+                    android:background="#CECECE" />
+
+
+                <TextView
+                    android:id="@+id/lbl_nom"
+                    style="@style/NatixisTheme.TextInfo.Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line_separator0"
+                    android:text="@string/name" />
+
+                <TextView
+                    android:id="@+id/tv_nom"
+                    style="@style/NatixisTheme.TextInfo.Value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/lbl_nom"
+                    android:layout_toRightOf="@id/lbl_nom"
+                    android:text="Emanuelle Dechatillon" />
+
+                <View
+                    android:id="@+id/line_separator1"
+                    android:layout_width="10dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tv_nom"
+                    android:background="#FFF" />
+
+
+                <TextView
+                    android:id="@+id/lbl_mail"
+                    style="@style/NatixisTheme.TextInfo.Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line_separator1"
+                    android:text="@string/email" />
+
+                <TextView
+                    android:id="@+id/tv_mail"
+                    style="@style/NatixisTheme.TextInfo.Value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/lbl_mail"
+                    android:layout_toRightOf="@id/lbl_mail"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="emmanuelle.dechatillon@gmail.com" />
+
+
+                <View
+                    android:id="@+id/line_separator2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tv_mail"
+                    android:background="#CECECE" />
+
+
+                <LinearLayout
+                    android:id="@+id/layout_buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line_separator2"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp">
+
+                    <Button
+                        android:id="@+id/bt_logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/natixis_red"
+                        android:text="@string/logout"
+                        android:textAllCaps="false"
+                        android:textColor="#FFF"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_language"
+                android:layout_below="@id/layout_user_info"
+                android:background="@drawable/bt_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               >
+
+                <!--
+                                <View
+                                    android:id="@+id/line_separator5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="#CECECE" />
+
+                -->
+                <TextView
+                    android:id="@+id/tv_lang"
+                    style="@style/NatixisTheme.TextInfo.Value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+
+                    android:background="@null"
+                    android:drawableLeft="@drawable/bt_lang"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@drawable/arrow_right"
+                    android:gravity="center_vertical"
+                    android:text="Deutsh ?" />
+
+                <TextView
+                    android:id="@+id/lbl_lang"
+                    style="@style/NatixisTheme.TextInfo.Label"
+                    android:layout_width="match_parent"
+                    android:background="@null"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_lang"
+                    android:layout_alignTop="@id/tv_lang"
+                    android:layout_toLeftOf="@+id/tv_lang"
+                    android:gravity="left|center_vertical"
+                    android:text="Langue" />
+                <!--
+                                <View
+                                    android:id="@+id/line_separator6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:layout_below="@id/tv_lang"
+                                    android:background="#CECECE" />
+                -->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_stockage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_language">
+
+                <TextView
+                    android:id="@+id/lbl_stockage"
+                    style="@style/NatixisTheme.TextTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stockage_management"
+
+                    android:textAllCaps="true" />
+
+
+                <View
+                    android:id="@+id/line_separator3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/lbl_stockage"
+                    android:background="#CECECE" />
+
+
+                <TextView
+                    android:id="@+id/lbl_disk"
+                    style="@style/NatixisTheme.TextInfo.Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line_separator3"
+                    android:text="@string/space" />
+
+                <TextView
+                    android:id="@+id/tv_disk"
+                    style="@style/NatixisTheme.TextInfo.Value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/lbl_disk"
+                    android:layout_toRightOf="@id/lbl_disk"
+                    android:text="100 Ko (0.11%)" />
+
+                <View
+                    android:id="@+id/line_separator4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/tv_disk"
+                    android:background="#CECECE" />
+
+                <LinearLayout
+                    android:id="@+id/layout_buttons2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line_separator4"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp">
+
+
+                    <Button
+                        android:id="@+id/bt_clear_stockage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@color/natixis_blue"
+                        android:text="@string/empty_downloads"
+                        android:textAllCaps="false"
+                        android:textColor="#FFF"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_support"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_stockage">
+
+                <TextView
+                    android:id="@+id/lbl_support"
+                    style="@style/NatixisTheme.TextTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentTop="true"
+                    android:text="@string/application_support"
+                    android:textAllCaps="true" />
+
+                <Button
+                    android:id="@+id/bt_contact_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lbl_support"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="#00B2CB"
+
+                    android:text="@string/contact_support"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:textSize="15sp" />
+
+                <!--
+                                <TextView
+                                    android:id="@+id/tv_desc_support"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/bt_contact_support"
+                                    android:layout_margin="13dp"
+                                    android:text="@string/contact_support_desc" />-->
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/bt_mentions_legals"
+                style="@style/NatixisTheme.TextInfo.Value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bt_textview"
+                android:drawableRight="@drawable/arrow_right"
+
+                android:textAllCaps="false"
+                android:gravity="left|center_vertical"
+                android:padding="10dp"
+                android:text="@string/legal_information"
+                android:textColor="#000" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
