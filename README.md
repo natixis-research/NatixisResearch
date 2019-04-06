@@ -1,6 +1,6 @@
 # Natixis-Research
 Natixis Research APK
-This is the source code for the NatixisResearch Android application version version 4.0.2 3
+This is the source code for the NatixisResearch Android application version version 4.0.2 3, NatixisResearch APK is free of use, a new version without mupdf-android-viewer-old code is available on the play store
 
 LICENSE
 =======
