@@ -15,4 +15,4 @@ You should have received a copy of the GNU Affero General Public License along w
 
 
 This version of the application includes pieces of MuPDF, licensed by ARTIFEX under the GNU Affero General Public License :
-https://github.com/ArtifexSoftware/mupdf-android-viewer-old 
+https://github.com/ArtifexSoftware/mupdf-android-viewer-old  you cannot use ArtifexSoftware for commercial purpose see https://github.com/ArtifexSoftware/mupdf-android-viewer-old/blob/master/ReadMe.txt
